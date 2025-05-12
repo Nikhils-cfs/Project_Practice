@@ -6,6 +6,7 @@ export const styles1 = StyleSheet.create({
     //   paddingTop: StatusBar.currentHeight,
     paddingTop: 20,
     marginHorizontal: 16,
+    paddingBottom:30
   },
   item: {
     backgroundColor: '#DBDBDB',

@@ -8,9 +8,14 @@ import Section from './Project/Login Form/Section/Section'
 export default function App() {
   return (
     <View style={{flex:1}}>
+      {/* Uncommit Login Page for Check Validations used for Email and Password. */}
       {/* <LoginPage/> */}
+
+      {/* Uncommit RegisterForm component for check Validation for each content available in Form and also here used Props and useState. multicomponents used in this component. */}
       {/* <RegisterForm/> */}
-      <Section/>
+
+      {/* Uncommit Section Component for check how SectionList work here i tried to show data from Array Object on display accordingly. */}
+      {/* <Section/> */}
       
     </View>
   )

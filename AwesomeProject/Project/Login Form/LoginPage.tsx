@@ -7,20 +7,19 @@ import {
   View,
   TouchableOpacity,
   Alert,
-  ImageBackground, Switch
+  ImageBackground,
+  Switch,
 } from 'react-native';
 import {styles} from './StyleLoginPage';
 import LinearGradient from 'react-native-linear-gradient';
-import { isEnabled } from 'react-native/Libraries/Performance/Systrace';
-
 
 export default function LoginPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [enabled, setEnabled] = useState(false);
   const toggleSwitch = () => {
-    setEnabled(previousState => ! previousState);
-  }
+    setEnabled(previousState => !previousState);
+  };
 
   function onPress() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -42,10 +41,12 @@ export default function LoginPage() {
       {/* <LinearGradient
         colors={["#7C93C3",'#B1B2FF', '#EEF5FF',"#B1B2FF" ]}
         style={styles.linear}> */}
-          <ImageBackground source={require('../assests/BG.png')} style={styles.background}>
+      <ImageBackground
+        source={require('../assests/BG.png')}
+        style={styles.background}>
         <View style={styles.wrap}>
           <LinearGradient
-            colors={['#7C93C3','#7C93C3','#D2E0FB', '#7C93C3','#7C93C3']}
+            colors={['#7C93C3', '#7C93C3', '#D2E0FB', '#7C93C3', '#7C93C3']}
             style={styles.linear}>
             <View style={styles.inputContainer}>
               <TextInput
@@ -66,12 +67,13 @@ export default function LoginPage() {
             </View>
 
             <View style={styles.buttonstyle}>
-              {/* <Switch 
-              trackColor={{false : '#ccc' , true : 'blue'}}
-              thumbColor={enabled ? 'black' : 'white' }
-              onChange={toggleSwitch}
-              value = {enabled}/>
-              <Text>Dark/light</Text> */}
+              <Switch
+                trackColor={{false: '#ccc', true: 'blue'}}
+                thumbColor={enabled ? 'black' : 'white'}
+                onChange={toggleSwitch}
+                value={enabled}
+              />
+              <Text>Dark/light</Text>
               <TouchableOpacity>
                 <Text style={styles.forgotPassword}>Forgot Password?</Text>
               </TouchableOpacity>
@@ -87,7 +89,7 @@ export default function LoginPage() {
             </View>
           </LinearGradient>
         </View>
-        </ImageBackground>
+      </ImageBackground>
       {/* </LinearGradient> */}
     </SafeAreaView>
   );

@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<!-- This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
@@ -94,4 +94,28 @@ To learn more about React Native, take a look at the following resources:
 - [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native. -->
+
+/* React Native Login Page */
+I built this simple login screen using React Native with a clean UI, gradient background, and image overlay. It uses TextInput, Switch, TouchableOpacity, and LinearGradient, with basic validation for email format and password length. The switch simulates dark/light mode (visual only).
+
+How It Works:
+State is managed with useState. The form checks for empty fields, validates the email with a regex, and ensures the password is at least 6 characters. Valid input triggers a success alert; otherwise, the user gets feedback. Buttons are interactive thanks to TouchableOpacity.
+
+
+
+
+/* React Native Registration Form */
+This registration form, built with React Native and TypeScript, lets users enter their name, contact number, email, and password. It includes field validation, feedback via alerts, and displays submitted data in a list with delete functionality.
+
+How It Works:
+Inputs and submissions are managed with useState. It checks all fields, ensures contact is 10 digits, validates the email, and confirms password match. On submit, it clears the form and updates a list rendered via SubmitData, with an option to delete entries.
+
+
+
+
+/* React Native Section List */
+This screen displays categorized travel destinations using SectionList in React Native. It groups destinations into sections like Beaches, Mountains, Cities, and Deserts, providing a simple and clean list view.
+
+How It Works:
+I used SectionList to organize and render grouped data, where each section has a title and related items. The layout is styled using a custom style file, and StatusBar ensures the UI looks consistent across devices. Each destination is displayed in a list under its category header.

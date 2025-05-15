@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     //   alignItems:'center', 
     },
     inputContainer: {
-      marginTop:20,
+      marginTop:14,
     //   backgroundColor:'#ccc',
       marginHorizontal:15,
      
@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
       
     },
     forgotPassword: {
-      color: 'white',
+      color: 'blue',
       marginBottom: 20,
       textAlign: 'right',
     },
@@ -33,19 +33,23 @@ export const styles = StyleSheet.create({
     },
     button:{
         marginTop:13,
-        marginLeft:89,
+        marginLeft:9,
         color:'white',
         textDecorationLine:'underline',
-        cursor:'pointer'
+        cursor:'pointer',
+        color:'blue'
     },
     button1:{
         // margin:5,
         height:45,
         color:'white',
         textAlign:'center',
-        justifyContent:'center',   
+        // justifyContent:'center',
+        // alignItems:'center',   
         paddingHorizontal:1,
-        borderBottomWidth:1   
+        padding:10,
+        borderBottomWidth:1 ,
+        // backgroundColor:'blue'  
     },
     linear:{
          flex:1,
@@ -57,9 +61,10 @@ export const styles = StyleSheet.create({
         // backgroundColor:"white",
         margin:"auto",
         borderRadius:49,
+        
     },
     background:{
-        height:'980',
+        height:'900',
         width:'auto'
     }
    

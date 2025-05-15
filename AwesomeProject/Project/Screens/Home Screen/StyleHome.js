@@ -25,7 +25,7 @@ export const styles = StyleSheet.create({
     shadowRadius: 6,
     elevation: 3,
 
-    // 👇 Make all cards same height & push button to bottom
+   
     height: 320,
     justifyContent: 'space-between',
   },
@@ -34,7 +34,7 @@ export const styles = StyleSheet.create({
     width: 110,
     borderRadius: 8,
     marginBottom: 8,
-    alignSelf: 'center', // 👈 Center image horizontally
+    alignSelf: 'center', 
   },
   title: {
     fontSize: 16,
@@ -66,6 +66,6 @@ export const styles = StyleSheet.create({
     fontWeight: '700',
   },
   addtocart: {
-    marginTop: 'auto', // 👈 Push to bottom
+    marginTop: 'auto', 
   },
 });

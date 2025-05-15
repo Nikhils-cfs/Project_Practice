@@ -40,6 +40,8 @@ const CartScreen: React.FC<Props> = ({ cart, setCart }) => {
       {cart.length === 0 ? (
         <Text style={styles.emptyText}>Your cart is empty.</Text>
       ) : (
+        <View style={styles.scrollContainer}>
+
         <ScrollView horizontal showsHorizontalScrollIndicator={false}>
           {cart.map((item: any, index: number) => (
             <View key={index} style={styles.card}>
@@ -54,6 +56,7 @@ const CartScreen: React.FC<Props> = ({ cart, setCart }) => {
             </View>
           ))}
         </ScrollView>
+        </View>
       )}
     </View>
   );

@@ -26,10 +26,10 @@ function BottomTabs() {
   const [cart, setCart] = useState<Watch[]>([]); 
   return (
     <Tab.Navigator>
-      <Tab.Screen name="Home">
+      <Tab.Screen name="Home" options={{headerShown:false}}>
         {() => <HomePage cart ={cart} setCart={setCart} />}
       </Tab.Screen>
-      <Tab.Screen name="Cart">
+      <Tab.Screen name="Cart" options={{headerShown:false}}>
         {() => <CartScreen cart={cart} setCart={setCart} />}
       </Tab.Screen>
     </Tab.Navigator>
@@ -40,7 +40,7 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
-        <Stack.Screen name="Login" component={LoginPage} />
+        <Stack.Screen name="Login" component={LoginPage}  options={{headerShown:false}}/>
         <Stack.Screen name="Register Form" component={RegisterForm} />
         <Stack.Screen name="Home" component={BottomTabs} />
       </Stack.Navigator>

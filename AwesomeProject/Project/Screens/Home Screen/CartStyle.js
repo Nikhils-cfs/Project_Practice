@@ -15,8 +15,13 @@ export const styles = StyleSheet.create({
     color: 'gray',
     fontSize: 16,
   },
+  scrollContainer: {
+    paddingTop:25,
+    height: 250, 
+    marginBottom: 16,
+  },
   card: {
-    // backgroundColor: '#f0f0f0',
+    backgroundColor: '#f0f0f0',
     padding: 12,
     borderRadius: 10,
     marginRight: 10,

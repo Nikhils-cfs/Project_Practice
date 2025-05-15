@@ -10,17 +10,22 @@ import {
 import { styles } from '../Home Screen/CartStyle';
 
 interface Watch {
-    id: number;
-    name: string;
-    category: string;
-    description: string;
-    price: string;
-    image: any;
-  }
-  
-const CartScreen = ({ route }: any) => {
-//   const initialCart = route.params?.cart || [];
-  const [cart, setCart] = useState<Watch[]>(route.params?.cart || []);
+  id: number;
+  name: string;
+  category: string;
+  description: string;
+  price: string;
+  image: any;
+}
+
+interface Props {
+  cart: Watch[];
+  setCart: React.Dispatch<React.SetStateAction<Watch[]>>;
+}
+
+const CartScreen: React.FC<Props> = ({ cart, setCart }) => {
+  //   const initialCart = route.params?.cart || [];
+  // const [cart, setCart] = useState<Watch[]>(route.params?.cart || []);
 
   const removeFromCart = (indexToRemove: number) => {
     const newCart = cart.filter((_, index) => index !== indexToRemove);

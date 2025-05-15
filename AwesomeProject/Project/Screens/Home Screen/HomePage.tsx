@@ -7,13 +7,9 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { styles } from './StyleHome';
-// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { NavigationContainer } from '@react-navigation/native';
-import CartScreen from './CartScreen';
 
-// const Tab = createBottomTabNavigator();
 
-const watches = [
+const watches:Watch[] = [
   {
     id: 1,
     name: 'Rolex Submariner',
@@ -96,30 +92,30 @@ const watches = [
   },
 ];
 
-const HomePage: React.FC = ({ navigation }: any) => {
-  const [cart, setCart] = useState<typeof watches>([]);
+interface Watch {
+  id: number;
+  name: string;
+  category: string;
+  description: string;
+  price: string;
+  image: any;
+}
 
-  const addToCart = (watch: typeof watches[0]) => {
-    setCart(prev => [...prev, watch]);
+interface Props {
+  cart: Watch[];
+  setCart: React.Dispatch<React.SetStateAction<Watch[]>>;
+}
+
+const HomePage: React.FC<Props> = ({ cart, setCart }) => {
+  // const [cart, setCart] = useState<typeof watches>([]);
+
+  const addToCart = (watch:  Watch) => {
+    setCart([...cart, watch]);
 
   };
 
   return (
     <ScrollView style={styles.container}>
-     
-      {/* <TouchableOpacity
-        onPress={() => navigation.navigate('Cart', { cart })}
-        style={{
-          backgroundColor: '#1e3a8a',
-          padding: 10,
-          marginBottom: 16,
-          borderRadius: 8,
-          alignSelf: 'flex-end',
-          marginRight: 10,
-        }}>
-        <Text style={{ color: 'white', fontWeight: 'bold' }}>View Cart</Text>
-      </TouchableOpacity> */}
-
       <View style={styles.grid}>
         {watches.map(watch => (
           <View key={watch.id} style={styles.card}>

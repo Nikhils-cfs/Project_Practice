@@ -16,7 +16,7 @@ const watches:Watch[] = [
     category: 'Luxury',
     description: 'A premium luxury watch known for its durability and style.',
     price: '$8,500',
-    image: require('../../assests/Images/image1.png'),
+    image: require('../../assests/Images/watchImages/image1.png'),
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const watches:Watch[] = [
     category: 'Luxury',
     description: 'Famous diving watch with a bold design.',
     price: '$6,200',
-    image: require('../../assests/Images/image2.png'),
+    image: require('../../assests/Images/watchImages/image2.png'),
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const watches:Watch[] = [
     category: 'Casual',
     description: 'Durable and affordable digital watch.',
     price: '$100',
-    image: require('../../assests/Images/image3.png'),
+    image: require('../../assests/Images/watchImages/image3.png'),
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const watches:Watch[] = [
     category: 'Sport',
     description: 'Sporty, high-performance watch for racing enthusiasts.',
     price: '$3,500',
-    image: require('../../assests/Images/image4.png'),
+    image: require('../../assests/Images/watchImages/image4.png'),
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const watches:Watch[] = [
     category: 'Smartwatch',
     description: 'A smartwatch that blends technology with style.',
     price: '$399',
-    image: require('../../assests/Images/image5.png'),
+    image: require('../../assests/Images/watchImages/image5.png'),
   },
   {
     id: 6,
@@ -56,7 +56,7 @@ const watches:Watch[] = [
     category: 'Dress',
     description: 'Elegant mechanical watch with a classic design.',
     price: '$450',
-    image: require('../../assests/Images/image6.png'),
+    image: require('../../assests/Images/watchImages/image6.png')
   },
   {
     id: 7,
@@ -64,7 +64,7 @@ const watches:Watch[] = [
     category: 'Smartwatch',
     description: 'Hybrid smartwatch with fitness tracking.',
     price: '$175',
-    image: require('../../assests/Images/image7.png'),
+    image: require('../../assests/Images/watchImages/image7.png'),
   },
   {
     id: 8,
@@ -72,7 +72,7 @@ const watches:Watch[] = [
     category: 'Casual',
     description: 'Eco-friendly solar-powered watch.',
     price: '$150',
-    image: require('../../assests/Images/image8.png'),
+    image: require('../../assests/Images/watchImages/image8.png'),
   },
   {
     id: 9,
@@ -80,7 +80,7 @@ const watches:Watch[] = [
     category: 'Luxury',
     description: 'Iconic luxury watch with timeless appeal.',
     price: '$40,000',
-    image: require('../../assests/Images/image9.png'),
+    image: require('../../assests/Images/watchImages/image9.png'),
   },
   {
     id: 10,
@@ -88,7 +88,7 @@ const watches:Watch[] = [
     category: 'Sport',
     description: 'Smartwatch with tactile touch interface.',
     price: '$650',
-    image: require('../../assests/Images/image10.png'),
+    image: require('../../assests/Images/watchImages/image10.png'),
   },
 ];
 
@@ -111,7 +111,7 @@ const HomePage: React.FC<Props> = ({ cart, setCart }) => {
 
   const addToCart = (watch:  Watch) => {
     setCart([...cart, watch]);
-
+   
   };
 
   return (
@@ -119,11 +119,12 @@ const HomePage: React.FC<Props> = ({ cart, setCart }) => {
       <View style={styles.grid}>
         {watches.map(watch => (
           <View key={watch.id} style={styles.card}>
+            <View style={styles.imagebg}>
             <Image
               source={watch.image}
               style={styles.image}
               resizeMode="contain"
-            />
+            /></View>
             <Text style={styles.title}>{watch.name}</Text>
             <Text style={styles.category}>{watch.category}</Text>
             <Text style={styles.description}>{watch.description}</Text>

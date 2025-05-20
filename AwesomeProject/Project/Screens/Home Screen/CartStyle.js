@@ -1,54 +1,83 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
-    padding: 16,
-    backgroundColor: '#ffffff',
+    padding: 18,
+    backgroundColor: 'skyblue',
     flex: 1,
   },
-  heading: {
-    fontSize: 22,
-    fontWeight: 'bold',
-    marginBottom: 12,
-  },
-  emptyText: {
-    color: 'gray',
-    fontSize: 16,
-  },
-  scrollContainer: {
-    paddingTop:25,
-    height: 250, 
-    marginBottom: 16,
-  },
   card: {
-    backgroundColor: '#f0f0f0',
-    padding: 12,
-    borderRadius: 10,
-    marginRight: 10,
-    width: 200,
+    flexDirection: 'row',
     alignItems: 'center',
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 12,
+    marginVertical: 8,
+    marginHorizontal: 16,
+    elevation: 2,
+  },
 
-  },
   image: {
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     borderRadius: 8,
+    marginRight: 12,
   },
+
+  info: {
+    flex: 1,
+  },
+
   name: {
-    fontWeight: 'bold',
-    marginTop: 8,
+    fontSize: 16,
+    fontWeight: '600',
   },
+
   price: {
-    color: '#1e3a8a',
-    marginBottom: 6,
+    fontSize: 14,
+    color: '#2563eb',
+    marginTop: 4,
   },
-  removeButton: {
-    backgroundColor: 'red',
-    paddingVertical: 6,
-    paddingHorizontal: 10,
-    borderRadius: 5,
+
+  checkbox: {
+    marginRight: 12,
   },
+
   removeButtonText: {
     color: 'white',
+    fontWeight: 'bold',
+  },
+
+  swipeDelete: {
+    backgroundColor: 'red',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 80,
+    height: '100%',
+    borderRadius: 10,
+  },
+
+  heading: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    padding: 16,
+  },
+
+  emptyText: {
+    textAlign: 'center',
+    marginTop: 50,
+    fontSize: 16,
+    color: '#6b7280',
+  },
+  category: {
+    color: '#6b7280',
+    fontSize: 13,
+    marginTop: 4,
+  },
+
+  description: {
+    color: '#4b5563',
+    fontSize: 13,
+    marginTop: 2,
   },
 });

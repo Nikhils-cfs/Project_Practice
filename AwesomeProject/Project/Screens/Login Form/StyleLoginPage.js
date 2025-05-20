@@ -1,72 +1,91 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
+
 export const styles = StyleSheet.create({
-    container: {
-      flex:1,
-    //   justifyContent:'center',    
-    //   alignItems:'center', 
-    },
-    inputContainer: {
-      marginTop:14,
-    //   backgroundColor:'#ccc',
-      marginHorizontal:15,
-     
-    },
-    input: {
-      height: 50,
-      borderColor: 'white',
-      borderBottomWidth:1,
-      paddingHorizontal: 146,
-      borderRadius: 5,
-      marginBottom:15
-      
-    },
-    forgotPassword: {
-      color: 'blue',
-      marginBottom: 20,
-      textAlign: 'right',
-    },
-    buttonstyle:{
-    
-      height:70,
-      width:350,
-      margin:25,
-    },
-    button:{
-        marginTop:13,
-        marginLeft:9,
-        color:'white',
-        textDecorationLine:'underline',
-        cursor:'pointer',
-        color:'blue'
-    },
-    button1:{
-        // margin:5,
-        height:45,
-        color:'white',
-        textAlign:'center',
-        // justifyContent:'center',
-        // alignItems:'center',   
-        paddingHorizontal:1,
-        padding:10,
-        borderBottomWidth:1 ,
-        // backgroundColor:'blue'  
-    },
-    linear:{
-         flex:1,
-         
-    },
-    wrap:{
-        height:350,
-        width:400,
-        // backgroundColor:"white",
-        margin:"auto",
-        borderRadius:49,
-        
-    },
-    background:{
-        height:'900',
-        width:'auto'
-    }
-   
-  });
+  container: {
+    flex: 1,
+  },
+  linear: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+  },
+  innerWrap: {
+    backgroundColor: 'rgba(210, 180, 180, 0.03)',
+    padding: 24,
+    borderRadius: 16,
+    shadowColor: '#123',
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+    elevation: 5,
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: '#fff',
+    textAlign: 'center',
+    marginBottom: 8,
+  },
+  subtitle: {
+    fontSize: 16,
+    color: '#e0e7ff',
+    textAlign: 'center',
+    marginBottom: 24,
+  },
+  inputContainer: {
+    marginBottom: 16,
+    // backgroundColor:'blue'
+  },
+  input: {
+    backgroundColor: 'rgba(255, 255, 255, 0.22)',
+    borderRadius: 8,
+    paddingVertical: 12,
+    paddingHorizontal: 16,
+    fontSize: 16,
+    color: '#fff',
+    marginBottom: 12,
+  },
+  forgotContainer: {
+    alignItems: 'flex-end',
+    marginBottom: 24,
+  },
+  forgotPassword: {
+    color: '#dbeafe',
+    fontSize: 14,
+  },
+  loginButton: {
+    backgroundColor: '#1e3a8a',
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  loginButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+  },
+  registerContainer: {
+    flexDirection: 'row',
+    justifyContent: 'center',
+  },
+  registerText: {
+    color: '#e0e7ff',
+    fontSize: 14,
+  },
+  registerLink: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 14,
+    marginLeft: 4,
+  },
+  passwordWrapper: {
+ justifyContent:'space-between'
   
+},
+eyeIcon: {
+  position:'absolute',
+  right: 22,
+  paddingVertical:10,
+
+},
+});

@@ -68,4 +68,12 @@ export const styles = StyleSheet.create({
   addtocart: {
     marginTop: 'auto', 
   },
+  imagebg:{
+    backgroundColor:'white',
+    marginBottom:12,
+    borderRadius:5,
+    shadowOpacity:0.2,
+    shadowColor:'#000',
+     elevation: 10,
+  }
 });

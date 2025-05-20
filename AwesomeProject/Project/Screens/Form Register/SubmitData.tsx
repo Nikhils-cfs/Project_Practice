@@ -27,6 +27,7 @@ function SubmitData({ data, onDelete }:SubmitProps){
             <Text style={styles.cell}>Name</Text>
             <Text style={styles.cell}>Contact</Text>
             <Text style={styles.cell}>Email</Text>
+            <Text style={styles.cell}></Text>
           </View>
           {data.map((item, index) => (
             <View key={index} style={styles.dataRow}>
@@ -34,12 +35,14 @@ function SubmitData({ data, onDelete }:SubmitProps){
               <Text style={styles.cell}>{item.name}</Text>
               <Text style={styles.cell}>{item.contact}</Text>
               <Text style={styles.cell}>{item.email}</Text>
+              < View>
               <Text
                 style={[styles.cell, { color: 'red' }]}
                 onPress={() => onDelete(index)}
               >
                 Delete
               </Text>
+              </View>
             </View>
           ))}
         </View>
